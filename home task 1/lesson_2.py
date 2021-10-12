@@ -4,7 +4,7 @@ import random
 secret = random.randint(0, 100)
 
 while True:
-    number = int(input("Choose your nuber: "))
+    number = int(input("Choose your number: "))
     if number == secret:
         print(f"You are right, this is {secret}")
         break
