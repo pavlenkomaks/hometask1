@@ -1,6 +1,4 @@
-import itertools
 
-coll = itertools.chain([1, 2, 3], [4, 5, 6], [7, '888', 9])
 
 def some_chain(*coll):
     for i in coll:
