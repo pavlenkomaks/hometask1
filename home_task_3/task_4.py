@@ -17,5 +17,5 @@ while True:
         print("YOU WON")
         break
     else:
-        input("TRY AGAIN\n")
-
+        input("TRY AGAIN \n")
+        

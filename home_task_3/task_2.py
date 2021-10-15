@@ -7,18 +7,22 @@ class Vehicle:
     def move(self):
         print(f'Vehicle {self.brand} is moving!')
 
-
-class Bus(Vehicle):
-    def move(self):
-        return f'Bus {self.brand} is moving with max speed {self.max_speed}'
-
     def set_max_speed(self, max_speed=70):
         self.max_speed = max_speed
 
-honda = Bus('Honda', 1990, 90)
-volvo = Bus('Volvo', 2001, 120)
+class Bus(Vehicle):
 
-honda.set_max_speed()
-volvo.set_max_speed()
+    def __init__(self, brand, year_of_production):
+        super().__init__(brand, year_of_production, 70)
+    def move(self):
+        return f'Bus {self.brand} is moving with max speed {self.max_speed}'
+
+
+
+honda = Bus('Honda', 1990)
+volvo = Bus('Volvo', 2001)
+
+volvo.set_max_speed(99)
+
 print(honda.move())
 print(volvo.move())
