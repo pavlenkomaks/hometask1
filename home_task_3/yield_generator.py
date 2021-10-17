@@ -1,5 +1,3 @@
-
-
 def some_chain(*coll):
     for i in coll:
         for j in i:
