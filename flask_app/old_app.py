@@ -27,3 +27,4 @@ def create_pray_request():
         json.dumps(pray_requests_data),
         mimetypes='application/json'
     )
+
